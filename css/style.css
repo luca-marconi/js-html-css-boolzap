@@ -18,3 +18,154 @@ main {
     left: 5%;
     background-color: lightgrey;
 }
+.rubrica {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.chat {
+    float: right;
+    width: 70%;
+    height: 100%;
+    background-image: url("https://external-preview.redd.it/rEwFriCkfAtjOb5b-23b4tGGVcuvfaBqamYNJrgxnLM.png?auto=webp&s=f3bf0b5c90e4c5fda12ff2139781c854554fd198");
+    display: flex;
+    flex-direction: row;
+}
+.profilo {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.rubrica img, .chat img {
+    width: 50px;
+}
+.command-profilo {
+    flex-direction: row;
+    color: grey;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.command-profilo i {
+    padding: 5px;
+}
+.chat-contact {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    border-left: 1px solid grey;
+}
+.left-chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.image-contact {
+    padding-right: 20px;
+}
+.left-chat p:first-of-type {
+    font-weight: bold;
+}
+.left-chat p:last-of-type {
+    font-weight: bold;
+    color: grey;
+}
+.command-chat {
+    flex-direction: row;
+    color: grey;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.command-chat i {
+    padding: 5px;
+}
+.notifiche {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    background-color: lightblue;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+}
+.notifiche i {
+    font-size: 40px;
+}
+.notifiche p:first-of-type {
+    font-weight: bold;
+}
+.notifiche p:last-of-type {
+    font-weight: bold;
+    color: grey;
+    text-decoration: underline;
+}
+.command-notifiche {
+    flex-direction: row;
+    padding-left: 10px;
+}
+.container-search-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    color: grey;
+}
+.container-search-bar input {
+    width: 370px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.rubrica-user {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.contact {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 10px;
+}
+.contact:hover {
+    background-color: lightgrey;
+}
+.contact img {
+    width: 60px;
+}
+.info-rubrica-user {
+    padding-left: 15px;
+}
+.info-rubrica-user p:first-of-type {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.info-rubrica-user p:last-of-type {
+    font-weight: bold;
+    color: grey;
+}
