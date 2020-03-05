@@ -249,3 +249,9 @@ small {
     font-size: 12px;
     color: grey;
 }
+.template-message-user {
+    display: none;
+}
+.template-message-contact {
+    display: none;
+}
