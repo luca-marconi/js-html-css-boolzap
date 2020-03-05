@@ -6,7 +6,9 @@ $(document).ready(function() {
 
         var messaggio = $('.template-message-user .message-user').clone();
         messaggio.find('.testo-messaggio').text(messaggioInput);
-        messaggio.find('.orario-messaggio').text('12:00');
+        var dt = new Date();
+        var time = dt.getHours() + ":" + dt.getMinutes();
+        messaggio.find('.orario-messaggio').text(time);
         $('.chat-message').append(messaggio);
         $('.chat-message').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
 
@@ -17,7 +19,7 @@ $(document).ready(function() {
 
             var messaggio = $('.template-message-contact .message-contact').clone();
             messaggio.find('.testo-messaggio').text('ok');
-            messaggio.find('.orario-messaggio').text('15:00');
+            messaggio.find('.orario-messaggio').text(time);
             $('.chat-message').append(messaggio);
             $('.chat-message').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
         }
