@@ -208,6 +208,7 @@ main {
 }
 .message-user {
     padding: 10px 0;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -255,7 +256,7 @@ small {
 .template-message-contact {
     display: none;
 }
-.question h3::after {
+.fa-paper-plane {
     font-family: "Font Awesome 5 Free";
     content: '\f1d8';
     font-weight: 900;
