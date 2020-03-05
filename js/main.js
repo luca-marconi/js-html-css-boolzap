@@ -8,6 +8,7 @@ $(document).ready(function() {
         messaggio.find('.testo-messaggio').text(messaggioInput);
         messaggio.find('.orario-messaggio').text('12:00');
         $('.chat-message').append(messaggio);
+        $('.chat-message').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
 
         setTimeout(risposta, 1000);
         function risposta() {
@@ -20,9 +21,20 @@ $(document).ready(function() {
             $('.chat-message').append(messaggio);
             $('.chat-message').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
         }
+    });
 
-    })
+    $('#cerca-contatti').keyup(function(event) {
+        console.log('prova');
+        var carattereFiltro = $(this).val().toLowerCase();
 
-
-
+        console.log(carattereFiltro);
+            $('.rubrica-user .contact').each(function() {
+                var nome = $(this).find('.info-rubrica-user h3').text().toLowerCase();
+                if (nome.includes(carattereFiltro)) {
+                    $(this).show();
+                } else {
+                $(this).hide();
+                }
+        });
+    });
 });

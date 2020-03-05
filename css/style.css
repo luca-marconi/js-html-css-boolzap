@@ -143,7 +143,7 @@ main {
     overflow-y: scroll;
 }
 .contact {
-    height: 150px;
+    height: 80px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -253,5 +253,8 @@ small {
     display: none;
 }
 .template-message-contact {
+    display: none;
+}
+.visibile {
     display: none;
 }
