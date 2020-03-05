@@ -255,6 +255,9 @@ small {
 .template-message-contact {
     display: none;
 }
-.visibile {
-    display: none;
+.question h3::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f1d8';
+    font-weight: 900;
+    float: right;
 }
