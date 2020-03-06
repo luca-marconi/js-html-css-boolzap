@@ -12,7 +12,7 @@ $(document).ready(function() {
         $('.chat-message').append(messaggio); // prendo la variabile messaggio e la incollo a fine chat (con append)
         $('.chat-message').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500); //scrollo automaticamente alla fine alla ricezione di un nuovo messaggio
         $('.input-message i:last').addClass('fa-microphone');
-        $('.input-message i:last').removeClass('fa-paper-plane');
+        $('.input-message i:last').removeClass('fa-paper-plane'); 
 
         setTimeout(risposta, 1000);
         function risposta() {
