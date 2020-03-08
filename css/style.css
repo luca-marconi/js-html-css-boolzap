@@ -11,6 +11,7 @@ main {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+
 .container {
     width: 90vw;
     height: 90vh;
@@ -132,7 +133,7 @@ main {
     background-color: #eeeeee;
 }
 .container-search-bar input {
-    width: 500px;
+    min-width: 400px;
     height: 30px;
     border: none;
     border-radius: 8px;
@@ -233,6 +234,8 @@ main {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
+    display: none;
 }
 
 .message-contact {
@@ -253,6 +256,7 @@ main {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    display: none;
 }
 small {
     font-size: 12px;
@@ -269,4 +273,35 @@ small {
     content: '\f1d8';
     font-weight: 900;
     float: right;
+}
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+.text-contact p, .text-contact i{
+    float: left;
+}
+.fa-chevron-down {
+    font-size: 15px;
+    padding-left: 10px;
+    color: grey;
+    padding-top: 8px;
+}
+ .text-user p, .text-user i {
+    float: left;
+}
+.testo-messaggio {
+    padding-right: 5px;
+}
+.orario-messaggio {
+    padding-left: 5px;
+    font-size: 10px;
+}
+.text-contact i, .text-user i {
+     display: none;
+}
+.text-contact:hover i, .text-user:hover i  {
+    display: block;
+    cursor: pointer;
 }
