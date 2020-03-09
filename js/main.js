@@ -23,11 +23,21 @@ $(document).ready(function() {
     });
 
     $('.input-message').keypress(function(event) {
-        if (event.which == 13) {
+        if (event.keyCode == 13) {
             invioMessaggio()
         }
     });
 
+    $('.contact').click(function() {
+        $('.contact').removeClass('active');
+        $(this).addClass('active');
+        var nomeContatto = $(this).find('h3').text();
+        var immagineContatto = $(this).find('img').attr('src');
+        console.log(nomeContatto);
+        console.log(immagineContatto);
+        $('.info-contact').find('p:first').text(nomeContatto);
+        $('.image-contact').find('img').attr('src', immagineContatto);
+    });
 
     function invioMessaggio() { // funzione per invio messaggio
         var messaggioInput = $('#text').val();

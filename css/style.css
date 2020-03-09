@@ -162,6 +162,7 @@ main {
     padding-left: 20px;
     border-bottom: 1px solid #eeeeee;
     padding: 10px 10px;
+    cursor: pointer;
 }
 .contact:hover {
     background-color: #eeeeee;
@@ -304,4 +305,7 @@ small {
 .text-contact:hover i, .text-user:hover i  {
     display: block;
     cursor: pointer;
+}
+.active {
+
 }
