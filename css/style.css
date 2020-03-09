@@ -210,11 +210,11 @@ main {
 .chat-message {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
     overflow-y: scroll;
+    display: none;
 }
 .message-user {
     padding: 10px 0;
@@ -236,7 +236,7 @@ main {
     align-items: flex-end;
     justify-content: center;
     position: relative;
-    display: none;
+
 }
 
 .message-contact {
@@ -244,6 +244,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
 }
 .text-contact {
     max-width: 50%;
@@ -257,7 +258,6 @@ main {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    display: none;
 }
 small {
     font-size: 12px;
@@ -306,6 +306,9 @@ small {
     display: block;
     cursor: pointer;
 }
-.active {
-
+.active-rubrica {
+    background-color: #eeeeee;
+}
+.active-chat {
+    display: block;
 }

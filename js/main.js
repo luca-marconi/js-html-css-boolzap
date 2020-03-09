@@ -29,14 +29,20 @@ $(document).ready(function() {
     });
 
     $('.contact').click(function() {
-        $('.contact').removeClass('active');
-        $(this).addClass('active');
+        $('.contact').removeClass('active-rubrica');
+        $(this).addClass('active-rubrica');
         var nomeContatto = $(this).find('h3').text();
         var immagineContatto = $(this).find('img').attr('src');
-        console.log(nomeContatto);
-        console.log(immagineContatto);
         $('.info-contact').find('p:first').text(nomeContatto);
         $('.image-contact').find('img').attr('src', immagineContatto);
+        var contatto = $(this).data('conversazioneUtente');
+        $('.chat .chat-message').each(function() {
+            if (contatto == $(this).data('conversazioneUtente')) {
+                $('.chat .chat-message').removeClass('active-chat');
+                $(this).addClass('active-chat');
+            }
+        })
+
     });
 
     function invioMessaggio() { // funzione per invio messaggio
@@ -48,8 +54,8 @@ $(document).ready(function() {
             var dt = new Date();
             var time = dt.getHours() + ":" + dt.getMinutes();
             messaggio.find('.orario-messaggio').text(time);
-            $('.chat-message').append(messaggio);
-            $('.chat-message').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
+            $('.active-chat').append(messaggio);
+            $('.active-chat').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
             $('.input-message i:last').addClass('fa-microphone');
             $('.input-message i:last').removeClass('fa-paper-plane');
             setTimeout(function() {
@@ -67,8 +73,8 @@ $(document).ready(function() {
         var dt = new Date();
         var time = dt.getHours() + ":" + dt.getMinutes();
         messaggio.find('.orario-messaggio').text(time);
-        $('.chat-message').append(messaggio);
-        $('.chat-message').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
+        $('.active-chat').append(messaggio);
+        $('.active-chat').animate({scrollTop: $('.chat-message').prop("scrollHeight")}, 500);
     }
 
 });
