@@ -45,6 +45,9 @@ $(document).ready(function() {
 
     });
 
+
+
+
     function invioMessaggio() { // funzione per invio messaggio
         var messaggioInput = $('#text').val();
         if (messaggioInput.trim().length > 0) {
@@ -63,6 +66,10 @@ $(document).ready(function() {
             }, 1000);
 
         }
+        $(messaggio).click(function() {
+            console.log('click');
+            $('.option-message').addClass('active-option');
+        });
     }
     function invioRisposta() {// funzione per invio automatico della risposta
 
