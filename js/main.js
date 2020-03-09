@@ -66,9 +66,13 @@ $(document).ready(function() {
             }, 1000);
 
         }
-        $(messaggio).click(function() {
+        $('.fa-chevron-down').click(function() {
             console.log('click');
+            $('.option-message').removeClass('active-option');
             $('.option-message').addClass('active-option');
+                $('.option-message p').click(function() {
+                    $('.option-message').removeClass('active-option');
+                })
         });
     }
     function invioRisposta() {// funzione per invio automatico della risposta

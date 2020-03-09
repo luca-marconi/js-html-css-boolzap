@@ -319,12 +319,14 @@ small {
     border-radius: 5px;
     padding: 25px 25px;
     position: absolute;
+    top: 40px;
     right: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     visibility: collapse;
+    cursor: pointer;
 }
 .active-option {
     visibility: visible;
