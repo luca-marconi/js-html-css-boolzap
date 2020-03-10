@@ -61,7 +61,7 @@ main {
     padding: 5px;
 }
 .chat-contact {
-    height: 70px;
+    height: 76px;
     width: 100%;
     display: flex;
     background-color: #eeeeee;
@@ -133,7 +133,8 @@ main {
     background-color: #eeeeee;
 }
 .container-search-bar input {
-    min-width: 400px;
+    max-width: 400px;
+    min-width: 380px;
     height: 30px;
     border: none;
     border-radius: 8px;
